@@ -1,0 +1,80 @@
+* {
+  background-color: #f8e7f6;
+  text-align: center;
+}
+h1 {
+  color: #7e5cad;
+}
+
+.modal-container {
+  height: 150px;
+  background-color: #c738bd;
+  color: #ffe1ff;
+  width: 400px;
+  border-radius: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  overflow: hidden;
+}
+
+.modal-content {
+  background-color: #c738bd;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.modal-buttons {
+  background-color: #c738bd;
+  gap: 10px;
+  padding: 20px;
+}
+
+.modal-buttons button {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #ffcefe;
+  cursor: pointer;
+}
+
+.modal-buttons button:hover {
+  background-color: pink;
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  background-color: #dab8f3;
+  cursor: pointer;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
